@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Piano</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- <!DOCTYPE html>
+<html lang="en"> -->
+<!-- 
+Inspired by Wes Bos' JS Drum Kit - from Javascript30 (www.javascript30.com)
+
+Also special thanks to freesound.org and neatonk ( https://www.freesound.org/people/neatonk/ ) for the sound pack! 
+
+sfhl + ; + sfhk + l + sfhj + k + adgh + j + adg
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Piano</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+
+  <div class="keys">
+    <div data-key="65" class="wkey">
+      <kbd>A</kbd>
+      <span class="sound">F</span>
+    </div>
+    <div data-key="83" class="wkey">
+      <kbd>S</kbd>
+      <span class="sound">G</span>
+    </div>
+    <div data-key="87" class="bkey" id="Fs3">
+      <bbd>W</bbd>
+      <span class="sound">F#</span>
+    </div>
+    <div data-key="68" class="wkey">
+      <kbd>D</kbd>
+      <span class="sound">A</span>
+    </div>
+    <div data-key="69" class="bkey" id="Gs3">
+      <bbd>E</bbd>
+      <span class="sound">G#</span>
+    </div>
+    <div data-key="70" class="wkey">
+      <kbd>F</kbd>
+      <span class="sound">B</span>
+    </div>
+    <div data-key="71" class="wkey">
+      <kbd>G</kbd>
+      <span class="sound">C</span>
+    </div>
+    <div data-key="82" class="bkey" id="As3">
+      <bbd>R</bbd>
+      <span class="sound">A#</span>
+    </div>
+    <div data-key="72" class="wkey">
+      <kbd>H</kbd>
+      <span class="sound">D</span>
+    </div>
+    <div data-key="89" class="bkey" id="Cs4">
+      <bbd>Y</bbd>
+      <span class="sound">C#</span>
+    </div>
+    <div data-key="74" class="wkey">
+      <kbd>J</kbd>
+      <span class="sound">E</span>
+    </div>
+    <div data-key="85" class="bkey" id="Ds4">
+      <bbd>U</bbd>
+      <span class="sound">D#</span>
+    </div>
+    <div data-key="75" class="wkey">
+      <kbd>K</kbd>
+      <span class="sound">F</span>
+    </div>
+    <div data-key="76" class="wkey">
+      <kbd>L</kbd>
+      <span class="sound">G</span>
+    </div>
+    <div data-key="79" class="bkey" id="Fs4">
+      <bbd>O</bbd>
+      <span class="sound">F#</span>
+    </div>
+    <div data-key="80" class="bkey" id="Gs4">
+      <bbd>P</bbd>
+      <span class="sound">G#</span>
+    </div>
+    <div data-key="186" class="wkey">
+      <kbd>;</kbd>
+      <span class="sound">A</span>
+    </div>
+    <div data-key="219" class="bkey" id="As4">
+      <bbd>[</bbd>
+      <span class="sound">A#</span>
+    </div>
+    <div data-key="222" class="wkey">
+      <kbd>'</kbd>
+      <span class="sound">B</span>
+    </div>
+    <div data-key="220" class="wkey">
+      <kbd>\</kbd>
+      <span class="sound">C</span>
+    </div>
+  </div>
+
+  <audio data-key="65" src="http://jakenelson.comxa.com/misc/piano/f3.mp3"></audio>
+  <audio data-key="83" src="http://jakenelson.comxa.com/misc/piano/g3.mp3"></audio>
+  <audio data-key="87" src="http://jakenelson.comxa.com/misc/piano/fs3.mp3"></audio>
+  <audio data-key="68" src="http://jakenelson.comxa.com/misc/piano/a3.mp3"></audio>
+  <audio data-key="69" src="http://jakenelson.comxa.com/misc/piano/gs3.mp3"></audio>
+  <audio data-key="70" src="http://jakenelson.comxa.com/misc/piano/b3.mp3"></audio>
+  <audio data-key="71" src="http://jakenelson.comxa.com/misc/piano/c4.mp3"></audio>
+  <audio data-key="82" src="http://jakenelson.comxa.com/misc/piano/as3.mp3"></audio>
+  <audio data-key="72" src="http://jakenelson.comxa.com/misc/piano/d4.mp3"></audio>
+  <audio data-key="89" src="http://jakenelson.comxa.com/misc/piano/cs4.mp3"></audio>
+  <audio data-key="74" src="http://jakenelson.comxa.com/misc/piano/e4.mp3"></audio>
+  <audio data-key="85" src="http://jakenelson.comxa.com/misc/piano/ds4.mp3"></audio>
+  <audio data-key="75" src="http://jakenelson.comxa.com/misc/piano/f4.mp3"></audio>
+  <audio data-key="76" src="http://jakenelson.comxa.com/misc/piano/g4.mp3"></audio>
+  <audio data-key="79" src="http://jakenelson.comxa.com/misc/piano/fs4.mp3"></audio>
+  <audio data-key="80" src="http://jakenelson.comxa.com/misc/piano/gs4.mp3"></audio>
+  <audio data-key="186" src="http://jakenelson.comxa.com/misc/piano/a4.mp3"></audio>
+  <audio data-key="219" src="http://jakenelson.comxa.com/misc/piano/as4.mp3"></audio>
+  <audio data-key="222" src="http://jakenelson.comxa.com/misc/piano/b4.mp3"></audio>
+  <audio data-key="220" src="http://jakenelson.comxa.com/misc/piano/c5.mp3"></audio>
+</body>
+
+</html>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
